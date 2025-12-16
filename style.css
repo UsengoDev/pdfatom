@@ -16,12 +16,16 @@ body {
 
 .logo_container {
 	display: flex;
-	font-weight: 700;
-	font-size: 1.6rem;
-	padding: 25px 0px 0px;
-	text-decoration: none;
-	user-select: none;
-	color: #111;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 0px;
+    text-decoration: none;
+    user-select: none;
+    color: #111;
+    max-width: 500px;
 }
 
 .container {
