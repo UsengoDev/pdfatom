@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PDFatom — Free Online PDF Compressor</title>
+	<meta name="description" content="Compress PDF files online. No uploads, no login. Fast and private.">
+
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<a href="/" class="logo_container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+              <rect width="64" height="64" fill="none"></rect>
+              <rect x="12" y="14" width="40" height="36" rx="4" ry="4" fill="#8c00ff" style="fill: #cf2222;"></rect>
+              <rect x="16" y="10" width="32" height="36" rx="4" ry="4" fill="#a464ff" style="fill: #f56464;"></rect>
+              <rect x="20" y="6" width="24" height="36" rx="4" ry="4" fill="#aa91ff" style="fill: #f38484;"></rect>
+              <text x="32" y="30" font-size="20" font-family="Arial, sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">P</text>
+            </svg>
+			<div class="logo_text_container">PDFatom</div>
+		</a>
+	</div>
+
+	<div class="container">
+		<h1>PDF Compression Tool</h1>
+		<p class="subtitle">Reduce PDF file size instantly. No upload. Runs entirely in your browser.</p>
+
+		<div id="dropzone">
+			<p>Drag & drop a PDF here</p>
+			<span>or</span>
+			<button id="selectBtn">Select PDF</button>
+			<input type="file" id="fileInput" accept="application/pdf" hidden>
+		</div>
+
+		<div class="controls">
+			<label>Compression level:</label>
+			<div class="levels">
+				<label><input type="radio" name="level" value="low" checked> Low</label>
+				<label><input type="radio" name="level" value="medium"> Medium</label>
+				<label><input type="radio" name="level" value="high"> High</label>
+			</div>
+			<button id="compressBtn" disabled>Compress PDF</button>
+		</div>
+
+		<div id="stats"></div>
+		<div id="progressContainer" style="display:none; width:100%; background:#eee; border-radius:8px; overflow:hidden; margin-top:10px;">
+			<div id="progressBar" style="height:14px; width:0%; background:#4a78ff;"></div>
+		</div>
+		<div id="downloadArea"></div>
+	</div>
+
+	<div id="footer">
+		<div class="footer_links">
+			<a href="/terms/">Terms</a>
+			<a href="/privacy/">Privacy</a>
+			<a href="/about/">About</a>
+			<a href="/contact/">Contact</a>
+		</div>
+		<div class="copyright">
+			&copy; 2025 PDFWash. All rights reserved.
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
