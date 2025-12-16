@@ -177,3 +177,8 @@ h1 {
 .tool_description{
     font-weight:normal;
 }
+@media (max-width: 575.98px) {
+    .other_tools_container{
+        flex-direction:column;
+    }
+}
