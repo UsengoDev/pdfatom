@@ -177,8 +177,24 @@ h1 {
 .tool_description{
     font-weight:normal;
 }
+.usengo_site_name{
+    font-weight:700;
+    font-size:3rem;
+}
+.usengo_site_description{
+    font-weight:400;
+}
+
 @media (max-width: 575.98px) {
     .other_tools_container{
         flex-direction:column;
+    }
+    .our_other_tools a{
+        width: 100%;
+        max-width: unset;
+    }
+    .other_tools_title{
+        text-align: center;
+        line-height: 1.85rem;
     }
 }
