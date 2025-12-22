@@ -169,7 +169,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 12%;
+    gap: 5%;
     padding: 24px;
     overflow: hidden;
     white-space: nowrap;
